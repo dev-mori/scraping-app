@@ -1,0 +1,9 @@
+<h1>Top#home</h1>
+<p>Find me in app/views/top/home.html.erb</p>
+<% @elements.each do|element| %>
+  <ul>
+    <li>
+      <%=link_to(element.inner_text,element[:href])%>
+    </li>
+  </ul>
+<%end%>
